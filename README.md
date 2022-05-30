@@ -1,6 +1,6 @@
 # Guilded Authlink Demo App
 
-**[Live instance here](https://authlink-demo.guildedapi.com)**
+**[Live instance here](https://authlinkdemo.guildedapi.com)**
 
 You can find implementations of every available endpoint in [/app/authlink.server.js](https://github.com/GuildedAPI/authlink-demo/blob/master/app/authlink.server.js), although only a few are used in this app.
 
