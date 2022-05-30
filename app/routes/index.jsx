@@ -14,7 +14,7 @@ export default function Index() {
     <div>
       <h1 className='font-bold text-2xl'>Guilded Authlink Demo App</h1>
       <p>
-        This is an <a href='https://github.com/GuildedAPI/authlink-demo-app' className='text-guilded-link' target='_blank'>open-source</a> demonstration app
+        This is an <a href='https://github.com/GuildedAPI/authlink-demo' className='text-guilded-link' target='_blank'>open-source</a> demonstration app
         made to showcase the <a href='https://authlink.guildedapi.com' className='text-guilded-link'>Authlink</a> OAuth2 implementation.
       </p>
       {data.user ? (
