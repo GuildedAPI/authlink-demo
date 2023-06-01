@@ -1,4 +1,4 @@
-const BASE = 'https://authlink.guildedapi.com/api/v1'
+const BASE = 'https://authlink.app/api/v1'
 
 // https://github.com/GuildedAPI/authlink/blob/master/app/common/guilded.js
 async function request(method, path, props={}) {
@@ -38,7 +38,7 @@ async function request(method, path, props={}) {
     return await response.data()
 }
 
-// https://authlink.guildedapi.com/dev/docs#exchange-code
+// https://authlink.app/dev/docs#exchange-code
 export async function exchangeCode(code) {
     return await request('POST', '/token', {
         data: new URLSearchParams({
@@ -54,7 +54,7 @@ export async function exchangeCode(code) {
     })
 }
 
-// https://authlink.guildedapi.com/dev/docs#exchange-code
+// https://authlink.app/dev/docs#exchange-code
 export async function refreshToken(refreshToken) {
     return await request('POST', '/token', {
         data: new URLSearchParams({
@@ -69,7 +69,7 @@ export async function refreshToken(refreshToken) {
     })
 }
 
-// https://authlink.guildedapi.com/dev/docs#revoke-token
+// https://authlink.app/dev/docs#revoke-token
 export async function revokeToken(token) {
     return await request('POST', '/token/revoke', {
         data: new URLSearchParams({
@@ -83,7 +83,7 @@ export async function revokeToken(token) {
     })
 }
 
-// https://authlink.guildedapi.com/dev/docs#get-current-user
+// https://authlink.app/dev/docs#get-current-user
 export async function getCurrentUser(accessToken) {
     return await request('GET', '/users/@me', {
         headers: {
@@ -92,7 +92,7 @@ export async function getCurrentUser(accessToken) {
     })
 }
 
-// https://authlink.guildedapi.com/dev/docs#get-current-user-servers
+// https://authlink.app/dev/docs#get-current-user-servers
 export async function getCurrentUserServers(accessToken) {
     return await request('GET', '/users/@me/servers', {
         headers: {
@@ -101,7 +101,7 @@ export async function getCurrentUserServers(accessToken) {
     })
 }
 
-// https://authlink.guildedapi.com/dev/docs#get-current-user-server-member
+// https://authlink.app/dev/docs#get-current-user-server-member
 export async function getCurrentUserServerMember(accessToken, serverId, getPermissions=false) {
     return await request('GET', `/users/@me/servers/${serverId}/member`, {
         headers: {

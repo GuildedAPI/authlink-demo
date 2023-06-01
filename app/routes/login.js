@@ -1,7 +1,7 @@
 import { redirect } from '@remix-run/server-runtime'
 
 export async function loader() {
-  const url = new URL('https://authlink.guildedapi.com/auth')
+  const url = new URL('https://authlink.app/auth')
   url.searchParams.set('client_id', process.env.CLIENT_ID)
   url.searchParams.set('scope', 'identify servers')
   url.searchParams.set('prompt', 'none')

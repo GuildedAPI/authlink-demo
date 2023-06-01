@@ -47,7 +47,7 @@ const Navbar = () => {
       </div>
       <div className='ml-auto my-auto'>
         <p>
-          <a href='https://authlink.guildedapi.com' className='text-guilded-link'>Authlink</a>
+          <a href='https://authlink.app' className='text-guilded-link'>Authlink</a>
           {' ' + String.fromCodePoint(0x2022) + ' '}
           <Link to='/' className='text-guilded-link'>Home</Link>
         </p>
